@@ -1,0 +1,17 @@
+﻿<ul>
+    @foreach (var dipendente in StaticSb._dipendenti)
+    {
+        <li>
+            ID: @dipendente.dipendentiId <br />
+            Nome: @dipendente.Name <br />
+            Cognome: @dipendente.Surname <br />
+            Anni: @dipendente.Anni <br />
+            Stipendio: @dipendente.Stipendio
+        </li>
+        <br /> <!-- Aggiungi uno spazio tra i dipendenti per una migliore leggibilità -->
+    }
+   
+   
+    </ul>
+
+<a asp-controller="Dipententi" asp-action="Add"> AGGIUNGI Dipendenti</a>
